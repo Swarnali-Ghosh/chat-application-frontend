@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.no_chats_available {
+    color: grey;
+}
+
+.poetsen-one-regular {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* -------------- chat background animation --------------------------------- */
+
+.chat-background {
+    background: linear-gradient(-45deg, #ee765298, #e73c7eb6, #23a5d5c7, #23d5abcc);
+    background-size: 400% 400%;
+    animation: gradient 55s ease infinite;
+    height: calc(100vh - 4rem);
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* -------------- chat background animation --------------------------------- */
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* --------------- change scroll bar color ---------------------------------- */
+
+::-webkit-scrollbar {
+    width: 7px;
+
+}
+
+::-webkit-scrollbar-track {
+    background-color: #005d43;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #25D366;
+    border-radius: 10px;
+}
+
+/* --------------- change scroll bar color ---------------------------------- */
+
+/* --------------- message-container ---------------------------------- */
+.message-container {
+    color: rgb(15, 22, 46);
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    width: 15rem;
+    text-wrap: wrap;
+    word-break: break-all;
+}
+
+/* --------------- message-container ---------------------------------- */
+
+p.cut-text {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 200px;
+    white-space: nowrap;
+    /* border: 1px solid red; */
+}
+
+.logo-div {
+    display: flex;
+    /* border: 1px solid red; */
+    width: 10%;
+    height: 4rem;
+    line-height: 4rem;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.logo-div-two {
+    display: flex;
+    /* border: 1px solid red; */
+    width: 15%;
+    height: 4rem;
+    line-height: 4rem;
+    align-items: center;
+    padding-left: 10px;
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+}
+
+.css-1k51tf5-MuiTooltip-tooltip {
+    background-color: #fff;
+    padding: 0px;
+}
+
+.chat-list {
+    height: calc(100vh - 4rem);
+    overflow-y: auto;
+}
+
+.nav-style {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #25D366;
+    height: 4rem
+}
+
+.adda {
+    background-color: #005d43;
+    color: #25D366;
+    padding: 4px;
+    border-radius: 5px;
+    color: white
+}
+
+.free-space {
+    width: 75%;
+}
+
+.css-n01hmc-MuiSvgIcon-root {
+    background-color: transparent !important;
+}
+
+.css-n01hmc-MuiSvgIcon-root {
+    /* display: none !important; */
+    opacity: 0.3;
+}
+
+.chat-item-hov:hover .css-n01hmc-MuiSvgIcon-root {
+    display: block !important;
+}
+
+.not-found-container {
+    text-align: center;
+    height: 100vh;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1.not-found-h {
+    font-size: 100px;
+    margin: 0;
+    color: #333;
+}
+
+p.not-found-p {
+    font-size: 18px;
+    color: #666;
+    margin: 20px 0;
+}
+
+.home-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.home-button:hover {
+    background-color: #0056b3;
+    color: #f9bdff;
+    font-weight: 600;
+}
+
+
+/*
+  If the browser window is 600px or smaller, the background color will be lightblue:
+
+   @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  } 
+  */
+
+@media only screen and (max-width: 1300px) {
+
+    p.cut-text {
+        width: 150px;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+    p.cut-text {
+        width: 130px;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+    p.cut-text {
+        width: 130px;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+
+    p.cut-text {
+        width: 100px;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    p.cut-text {
+        width: 70px;
+        font-size: 15px;
+    }
+
+    .logo-div-two {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .logo-text {
+        display: none;
+    }
+
+    .logo-div {
+        width: 0%;
+    }
+
+    .logo-div-two {
+        width: 30%;
+    }
+
+
+    .free-space {
+        width: 0%;
+    }
+
+    .css-1odx36v {
+        height: 3.5rem !important;
+    }
+
+    .chat-background {
+        height: calc(100vh - 3.5rem) !important;
+    }
+
+    .css-9m2dos-MuiStack-root {
+        width: 23rem !important;
+    }
+
+    .chat-list {
+        height: 100vh;
+        overflow-y: auto;
+        width: 280px !important;
+    }
+
+    .css-espm79-MuiStack-root {
+        width: 300px !important;
+    }
+}
+
+@media only screen and (max-width: 499px) {
+    .css-9m2dos-MuiStack-root {
+        width: 19rem !important;
+    }
+
+    p.cut-text {
+        width: 100px;
+        font-size: 15px;
+    }
+
+    .logo-div-two {
+        width: 35%;
+    }
+}
+
+@media only screen and (max-width: 399px) {
+    p.cut-text {
+        width: 70px;
+        font-size: 15px;
+    }
+
+    .logo-div-two {
+        width: 45%;
+    }
+}
